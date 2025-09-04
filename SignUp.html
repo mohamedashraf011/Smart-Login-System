@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System | Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="d-flex align-items-center justify-content-center min-vh-100">
+                <div class="login w-75 p-5 shadow-lg rounded-5">
+                    <div class="bg-white p-3 rounded-5">
+                        <h1>Smart Login System</h1>
+
+                        <div class="mb-3">
+                            <label for="userName" class="fw-semibold">Name</label>
+                            <input type="text" placeholder="Enter your name" class="form-control mb-3" id="userName" oninput="validateName()">
+                            <small id="nameMsg" class="text-danger d-none"></small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="userEmail" class="fw-semibold">Email</label>
+                            <input type="text" placeholder="Enter your email" class="form-control mb-3" id="userEmail" oninput="validateEmail()">
+                            <small id="emailMsg" class="text-danger d-none"></small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="userPassword" class="fw-semibold">Password</label>
+                            <input type="password" placeholder="Enter password" class="form-control mb-3" id="userPassword" oninput="validatePassword()">
+                            <small id="passwordMsg" class="text-danger d-none"></small>
+                        </div>
+
+                        <p id="Msg" class="text-danger text-center d-none"></p>
+
+                        <button id="signUpBtn" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+
+                        <div class="d-flex align-items-center my-3">
+                            <hr class="flex-grow-1">
+                            <span class="mx-2 fw-semibold text-black-50">OR</span>
+                            <hr class="flex-grow-1">
+                        </div>
+
+                        <p class="text-center text-muted">
+                            Don’t have an account?
+                            <a href="index.html" class="fw-semibold">Sign In</a>
+                        </p>
+                    </div>
+
+                </div>
+        </section>
+    </main>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

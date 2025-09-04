@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    background: linear-gradient(#FFFFFF,#E3F2FD,#BBDEFB);
+    font-family: 'Titillium Web', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+input, textarea {
+    background-color: transparent !important;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #2C6DA4 !important;
+}
+
+a{
+    text-decoration: none;
+    color: #2C6DA4;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.navbar{
+    background-color: #2C6DA4;
+}
+
+.login{
+    background: linear-gradient(#FFFFFF,#E3F2FD,#BBDEFB);
+    border-radius: 1.25rem;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+}
+.login h1{
+    color: #1F507A;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+#email::placeholder,
+#password::placeholder,
+#userEmail::placeholder,
+#userPassword::placeholder,
+#userName::placeholder{
+    color: #757575;
+    font-size: 1rem;
+}
+.btn-outline-info {
+    background-color: #2C6DA4;
+    color: #fff;
+    border-color: #2C6DA4;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.btn-outline-info:hover{
+    background-color: #1F507A;
+    color: #fff;
+    border-color: #1F507A;
+}
+
+.navbar a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-outline-secondary{
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-secondary:hover{
+    background-color: #fff;
+    color: #2C6DA4;
+    border-color: #2C6DA4;
+}
